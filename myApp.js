@@ -8,6 +8,9 @@
 
 /** 1) Install & Set up mongoose */
 
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGO_URI);
+
 // Add mongodb and mongoose to the project's package.json. Then require 
 // mongoose. Store your Mongo Atlas database URI in the private .env file 
 // as MONGO_URI. Connect to the database using the following syntax:
